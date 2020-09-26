@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "946459783473",
+    "firebase_url": "https://jewelnetmodified.firebaseio.com",
+    "project_id": "jewelnetmodified",
+    "storage_bucket": "jewelnetmodified.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:946459783473:android:2980c8bc6b82c99c",
+        "android_client_info": {
+          "package_name": "com.gss.jbc"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "946459783473-db7amll30m794d38fljiakgpavg6c37a.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCkhwYiru970MgUf5B2Pq28cXRqT_Sai9E"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

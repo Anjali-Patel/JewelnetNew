@@ -1,0 +1,169 @@
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    android:minHeight="?attr/actionBarSize">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/DarkBackground"
+        app:elevation="0dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:id="@+id/toolbarlayout">
+
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:visibility="gone"
+                app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
+
+
+            <LinearLayout
+                android:layout_centerVertical="true"
+                android:gravity="center_vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/menu_icon"
+                android:layout_width="50dp"
+                android:layout_height="?attr/actionBarSize"
+                android:src="@drawable/ic_menu"
+                android:padding="13dp"
+                android:layout_centerVertical="true" />
+
+
+                <TextView
+                    android:id="@+id/toolbar_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="Discover JewelNet"
+                    android:textColor="@color/YellowTextcolor"
+                    android:textSize="17dp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:gravity="center_vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent">
+
+                <FrameLayout
+                    android:layout_width="35dp"
+                    android:layout_height="35dp">
+
+                    <ImageView
+                        android:src="@drawable/dashedcircle"
+                        android:scaleType="fitCenter"
+                        android:layout_height="35dp"
+                        android:layout_width="35dp"/>
+
+                    <TextView
+                        android:id="@+id/NewsCount"
+                        android:text="0"
+                        android:textSize="30px"
+                        android:textStyle="bold"
+                        android:layout_height="fill_parent"
+                        android:layout_width="fill_parent"
+                        android:gravity="center"
+                        android:textColor="#ffffff"/>
+                </FrameLayout>
+
+                <!--<ImageView-->
+                    <!--android:id="@+id/ViewCount"-->
+                    <!--android:layout_width="35dp"-->
+                    <!--android:layout_height="match_parent"-->
+                    <!--android:layout_marginEnd="15dp"-->
+                    <!--android:layout_marginRight="15dp"-->
+                    <!--android:src="@drawable/dashedcircle" />-->
+
+                <!--<TextView-->
+                    <!--android:id="@+id/Views"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_alignParentEnd="true"-->
+                    <!--android:layout_alignParentRight="true"-->
+                    <!--android:layout_centerVertical="true"-->
+                    <!--android:layout_marginEnd="15dp"-->
+                    <!--android:padding="10dp"-->
+                    <!--android:layout_marginRight="15dp"-->
+                    <!--android:background="@drawable/post_border"-->
+                    <!--android:text="1"-->
+                    <!--android:textColor="#ffffff" />-->
+
+                <ImageView
+                    android:id="@+id/GotoTop"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:src="@drawable/ic_up_arrow" />
+                <TextView
+                    android:id="@+id/post"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="15dp"
+                    android:padding="10dp"
+                    android:layout_marginRight="15dp"
+                    android:background="@drawable/post_border"
+                    android:text="POST"
+                    android:textColor="#ffffff"
+                    android:visibility="gone"/>
+                <ImageView
+                    android:id="@+id/share"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="6dp"
+                    android:layout_marginRight="6dp"
+                    android:src="@drawable/share"
+                    android:visibility="gone"
+                    />
+
+                <!--<ImageView-->
+                    <!--android:id="@+id/menu_icon_option"-->
+                    <!--android:layout_width="50dp"-->
+                    <!--android:layout_height="?attr/actionBarSize"-->
+                    <!--android:src="@drawable/standingmenu"-->
+                    <!--android:padding="13dp"-->
+                    <!--android:layout_centerVertical="true" />-->
+
+                <TextView
+                    android:id="@+id/menu_icon_option"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="10dp"
+                    android:padding="10dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/post_border"
+                    android:text="CLICK"
+                    android:textColor="#ffffff"/>
+
+            </LinearLayout>
+
+
+
+        </RelativeLayout>
+
+
+    </android.support.design.widget.AppBarLayout>
+
+
+</android.support.design.widget.CoordinatorLayout>

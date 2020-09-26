@@ -1,0 +1,351 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MenuActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <android.support.design.widget.AppBarLayout
+            android:id="@+id/appbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:theme="@style/AppTheme.AppBarOverlay">
+            <!--<include layout="@layout/toolbar">-->
+            <!--</include>-->
+            <include layout="@layout/toolbar_without_newscount"></include>
+        </android.support.design.widget.AppBarLayout>
+
+        <FrameLayout
+            android:id="@+id/mainview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:layout_marginTop="60dp"
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:orientation="vertical"
+                    android:background="#ffffff"
+                    android:weightSum="10">
+
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_weight="1.5"
+                        android:orientation="horizontal"
+                        android:weightSum="2">
+
+                        <RelativeLayout
+                            android:id="@+id/JhomeRelative"
+                            android:layout_marginRight="5dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:layout_centerInParent="true"
+                            android:background="#a180a4">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical"
+                                android:layout_centerHorizontal="true"
+                                android:gravity="center"
+                                android:layout_centerInParent="true">
+
+                            <ImageView
+                                android:id="@+id/Jhome"
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"
+                                android:layout_centerInParent="true"
+                                android:src="@drawable/jhome" />
+
+                            <TextView
+                                android:layout_below="@id/Jhome"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerInParent="true"
+                                android:text="Home"
+                                android:gravity="center"
+                                android:minLines="2"
+                                android:textColor="#fff"
+                                android:textSize="15sp" />
+
+                            </LinearLayout>
+                        </RelativeLayout>
+
+
+                        <RelativeLayout
+                            android:id="@+id/JinfoRelative"
+                            android:layout_marginLeft="5dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_centerInParent="true"
+                            android:layout_weight="1"
+                            android:background="#a180a4">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical"
+                                android:layout_centerHorizontal="true"
+                                android:gravity="center"
+                                android:layout_centerInParent="true">
+
+                            <ImageView
+                                android:id="@+id/Jinfo"
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"
+                                android:layout_centerInParent="true"
+                                android:layout_weight="1.5"
+                                android:src="@drawable/info" />
+
+                            <TextView
+                                android:layout_below="@id/Jinfo"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_centerInParent="true"
+                                android:layout_centerHorizontal="true"
+                                android:text="JewelNet Info Directory"
+                                android:gravity="center"
+                                android:minLines="2"
+                                android:textColor="#fff"
+                                android:textSize="15sp" />
+
+                            </LinearLayout>
+                        </RelativeLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_weight="1.5"
+                        android:orientation="horizontal"
+                        android:weightSum="2">
+
+                        <RelativeLayout
+                            android:id="@+id/JexhibitionsRelative"
+                            android:layout_marginRight="5dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:layout_centerInParent="true"
+                            android:background="#a180a4">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical"
+                                android:layout_centerHorizontal="true"
+                                android:gravity="center"
+                                android:layout_centerInParent="true">
+
+                            <ImageView
+                                android:id="@+id/Jexhibitions"
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"
+                                android:layout_centerInParent="true"
+                                android:layout_weight="1.5"
+                                android:src="@drawable/exhibitions" />
+
+                            <TextView
+                                android:layout_below="@id/Jexhibitions"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerInParent="true"
+                                android:text="Exhibitions"
+                                android:gravity="center"
+                                android:minLines="2"
+                                android:textColor="#fff"
+                                android:textSize="15sp" />
+
+                            </LinearLayout>
+                        </RelativeLayout>
+
+
+                        <RelativeLayout
+                            android:id="@+id/JcontactRelative"
+                            android:layout_marginLeft="5dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:layout_centerInParent="true"
+                            android:background="#a180a4">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical"
+                                android:layout_centerHorizontal="true"
+                                android:gravity="center"
+                                android:layout_centerInParent="true">
+
+                            <ImageView
+                                android:id="@+id/Jcontact"
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"
+                                android:layout_centerInParent="true"
+                                android:layout_weight="1.5"
+                                android:src="@drawable/jcontact" />
+
+                            <TextView
+                                android:layout_below="@id/Jcontact"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerInParent="true"
+                                android:text="Contact Us"
+                                android:gravity="center"
+                                android:minLines="2"
+                                android:textColor="#fff"
+                                android:textSize="15sp" />
+
+                            </LinearLayout>
+                        </RelativeLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_weight="1.5"
+                        android:orientation="horizontal"
+                        android:weightSum="2">
+
+                        <RelativeLayout
+                            android:id="@+id/JSettingsRelative"
+                            android:layout_marginRight="5dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:layout_centerInParent="true"
+                            android:background="#a180a4">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical"
+                                android:layout_centerHorizontal="true"
+                                android:gravity="center"
+                                android:layout_centerInParent="true">
+
+                            <ImageView
+                                android:id="@+id/JSettings"
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"
+                                android:layout_centerInParent="true"
+                                android:layout_weight="1.5"
+                                android:src="@drawable/jsettings" />
+
+                            <TextView
+                                android:layout_below="@id/JSettings"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerInParent="true"
+                                android:text="Settings"
+                                android:gravity="center"
+                                android:textColor="#fff"
+                                android:minLines="2"
+                                android:textSize="15sp" />
+
+                            </LinearLayout>
+                        </RelativeLayout>
+
+
+                        <RelativeLayout
+                            android:id="@+id/JlogoutRelative"
+                            android:layout_marginLeft="5dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:layout_centerInParent="true"
+                            android:background="#a180a4">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical"
+                                android:layout_centerHorizontal="true"
+                                android:gravity="center"
+                                android:layout_centerInParent="true">
+
+                            <ImageView
+                                android:id="@+id/Jlogout"
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"
+                                android:layout_centerInParent="true"
+                                android:layout_weight="1.5"
+                                android:src="@drawable/logout" />
+
+                            <TextView
+                                android:layout_below="@id/Jlogout"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerInParent="true"
+                                android:text="Logout"
+                                android:minLines="2"
+                                android:gravity="center"
+                                android:textColor="#fff"
+                                android:textSize="15sp" />
+
+                            </LinearLayout>
+                        </RelativeLayout>
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:background="#50000000"
+                    android:layout_weight="1"></LinearLayout>
+
+            </LinearLayout>
+
+
+        </FrameLayout>
+    </RelativeLayout>
+
+
+
+
+
+
+    <!--<LinearLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content">-->
+
+        <!--<android.support.design.widget.AppBarLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:theme="@style/AppTheme.AppBarOverlay">-->
+
+
+            <!--<include layout="@layout/custom_toolbar"-->
+                <!--&gt;</include>-->
+
+
+        <!--</android.support.design.widget.AppBarLayout>-->
+    <!--</LinearLayout>-->
+
+</android.support.constraint.ConstraintLayout>

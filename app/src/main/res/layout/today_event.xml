@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="20dp"
+    android:background="@color/white">
+
+
+
+    <ImageView
+        android:id="@+id/close"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:src="@drawable/cancel" />
+
+    <RelativeLayout
+        android:id="@+id/event1Relative"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/event_img"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="30dp"
+       android:layout_centerHorizontal="true"
+        android:src="@drawable/calender" />
+
+    <TextView
+        android:layout_below="@+id/event_img"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="title"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="@color/statusbar"
+        android:id="@+id/event_title"/>
+
+    <TextView
+        android:layout_below="@+id/event_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="title"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:textColor="@color/statusbar"
+        android:textSize="15sp"
+        android:id="@+id/event_note"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_below="@+id/event1Relative"
+        android:id="@+id/event2Relative"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/event2_img"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_marginTop="30dp"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/jaipurshow" />
+
+        <TextView
+            android:layout_below="@+id/event2_img"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Jaipur Jewellery Show"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="@color/statusbar"
+            android:id="@+id/event2_title"/>
+
+        <TextView
+            android:layout_below="@+id/event2_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="December 20-23-2019 | Jaipur"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:textColor="@color/statusbar"
+            android:textSize="15sp"
+            android:id="@+id/event2_note"/>
+
+    </RelativeLayout>
+
+
+
+
+</RelativeLayout>

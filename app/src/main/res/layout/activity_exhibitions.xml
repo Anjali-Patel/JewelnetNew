@@ -1,0 +1,527 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawyer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context=".Exhibitions">
+
+
+        <android.support.design.widget.AppBarLayout
+            android:id="@+id/appbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:theme="@style/AppTheme.AppBarOverlay">
+            <include layout="@layout/toolbar_without_newscount"></include>
+        </android.support.design.widget.AppBarLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+    <FrameLayout
+        android:id="@+id/mainview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_marginTop="70dp"
+            android:layout_marginBottom="10dp"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <LinearLayout
+                android:id="@+id/linear1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true">
+
+                <RelativeLayout
+                    android:id="@+id/jan"
+                    android:background="@drawable/calender_bg"
+                    android:layout_width="150dp"
+                    android:layout_height="120dp"
+                    android:layout_alignLeft="@+id/cardView"
+                    android:layout_alignStart="@+id/cardView"
+                    android:layout_below="@+id/cardView"
+                    android:layout_weight="1"
+                    android:layout_margin="5dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:layout_width="40dp"
+                                android:layout_height="40dp"
+                                android:src="@drawable/calender" />
+
+                            <TextView
+                                android:layout_marginTop="10dp"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textColor="@color/DarkBackground"
+                                android:textSize="18sp"
+                                android:text="January" />
+                        </LinearLayout>
+
+
+                    </RelativeLayout>
+
+
+
+                    <RelativeLayout
+                        android:id="@+id/feb"
+                        android:background="@drawable/calender_bg"
+                        android:layout_width="150dp"
+                        android:layout_height="120dp"
+                        android:layout_alignLeft="@+id/cardView"
+                        android:layout_alignStart="@+id/cardView"
+                        android:layout_below="@+id/cardView"
+                        android:layout_weight="1"
+                        android:layout_margin="5dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:layout_width="40dp"
+                                android:layout_height="40dp"
+                                android:src="@drawable/calender" />
+
+                            <TextView
+                                android:layout_marginTop="10dp"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textColor="@color/DarkBackground"
+                                android:textSize="18sp"
+                                android:text="February" />
+                        </LinearLayout>
+
+
+                    </RelativeLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linear2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/linear1">
+
+                <RelativeLayout
+                    android:id="@+id/mar"
+                    android:background="@drawable/calender_bg"
+                    android:layout_width="150dp"
+                    android:layout_height="120dp"
+                    android:layout_alignLeft="@+id/cardView"
+                    android:layout_alignStart="@+id/cardView"
+                    android:layout_below="@+id/cardView"
+                    android:layout_weight="1"
+                    android:layout_margin="5dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:src="@drawable/calender" />
+
+                        <TextView
+                            android:layout_marginTop="10dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/DarkBackground"
+                            android:textSize="18sp"
+                            android:text="March" />
+                    </LinearLayout>
+
+
+                </RelativeLayout>
+
+
+
+                <RelativeLayout
+                    android:id="@+id/apr"
+                    android:background="@drawable/calender_bg"
+                    android:layout_width="150dp"
+                    android:layout_height="120dp"
+                    android:layout_alignLeft="@+id/cardView"
+                    android:layout_alignStart="@+id/cardView"
+                    android:layout_below="@+id/cardView"
+                    android:layout_weight="1"
+                    android:layout_margin="5dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:src="@drawable/calender" />
+
+                        <TextView
+                            android:layout_marginTop="10dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/DarkBackground"
+                            android:textSize="18sp"
+                            android:text="April" />
+                    </LinearLayout>
+
+
+                </RelativeLayout>
+
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/linear1">
+                <RelativeLayout
+                    android:id="@+id/may"
+                    android:background="@drawable/calender_bg"
+                    android:layout_width="150dp"
+                    android:layout_height="120dp"
+                    android:layout_alignLeft="@+id/cardView"
+                    android:layout_alignStart="@+id/cardView"
+                    android:layout_below="@+id/cardView"
+                    android:layout_weight="1"
+                    android:layout_margin="5dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:src="@drawable/calender" />
+
+                        <TextView
+                            android:layout_marginTop="10dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/DarkBackground"
+                            android:textSize="18sp"
+                            android:text="May" />
+                    </LinearLayout>
+
+
+                </RelativeLayout>
+
+
+
+                <RelativeLayout
+                    android:id="@+id/jun"
+                    android:background="@drawable/calender_bg"
+                    android:layout_width="150dp"
+                    android:layout_height="120dp"
+                    android:layout_alignLeft="@+id/cardView"
+                    android:layout_alignStart="@+id/cardView"
+                    android:layout_below="@+id/cardView"
+                    android:layout_weight="1"
+                    android:layout_margin="5dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:src="@drawable/calender" />
+
+                        <TextView
+                            android:layout_marginTop="10dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/DarkBackground"
+                            android:textSize="18sp"
+                            android:text="June" />
+                    </LinearLayout>
+
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/linear1">
+
+                <RelativeLayout
+                    android:id="@+id/jul"
+                    android:background="@drawable/calender_bg"
+                    android:layout_width="150dp"
+                    android:layout_height="120dp"
+                    android:layout_alignLeft="@+id/cardView"
+                    android:layout_alignStart="@+id/cardView"
+                    android:layout_below="@+id/cardView"
+                    android:layout_weight="1"
+                    android:layout_margin="5dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:src="@drawable/calender" />
+
+                        <TextView
+                            android:layout_marginTop="10dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/DarkBackground"
+                            android:textSize="18sp"
+                            android:text="July" />
+                    </LinearLayout>
+
+
+                </RelativeLayout>
+
+
+
+                <RelativeLayout
+                    android:id="@+id/aug"
+                    android:background="@drawable/calender_bg"
+                    android:layout_width="150dp"
+                    android:layout_height="120dp"
+                    android:layout_alignLeft="@+id/cardView"
+                    android:layout_alignStart="@+id/cardView"
+                    android:layout_below="@+id/cardView"
+                    android:layout_weight="1"
+                    android:layout_margin="5dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:src="@drawable/calender" />
+
+                        <TextView
+                            android:layout_marginTop="10dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/DarkBackground"
+                            android:textSize="18sp"
+                            android:text="August" />
+                    </LinearLayout>
+
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/linear1">
+
+                <RelativeLayout
+                    android:id="@+id/sept"
+                    android:background="@drawable/calender_bg"
+                    android:layout_width="150dp"
+                    android:layout_height="120dp"
+                    android:layout_alignLeft="@+id/cardView"
+                    android:layout_alignStart="@+id/cardView"
+                    android:layout_below="@+id/cardView"
+                    android:layout_weight="1"
+                    android:layout_margin="5dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:src="@drawable/calender" />
+
+                        <TextView
+                            android:layout_marginTop="10dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/DarkBackground"
+                            android:textSize="18sp"
+                            android:text="September" />
+                    </LinearLayout>
+
+
+                </RelativeLayout>
+
+
+
+                <RelativeLayout
+                    android:id="@+id/oct"
+                    android:background="@drawable/calender_bg"
+                    android:layout_width="150dp"
+                    android:layout_height="120dp"
+                    android:layout_alignLeft="@+id/cardView"
+                    android:layout_alignStart="@+id/cardView"
+                    android:layout_below="@+id/cardView"
+                    android:layout_weight="1"
+                    android:layout_margin="5dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:src="@drawable/calender" />
+
+                        <TextView
+                            android:layout_marginTop="10dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/DarkBackground"
+                            android:textSize="18sp"
+                            android:text="October" />
+                    </LinearLayout>
+
+
+                </RelativeLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/linear1">
+                <RelativeLayout
+                    android:id="@+id/nov"
+                    android:background="@drawable/calender_bg"
+                    android:layout_width="150dp"
+                    android:layout_height="120dp"
+                    android:layout_alignLeft="@+id/cardView"
+                    android:layout_alignStart="@+id/cardView"
+                    android:layout_below="@+id/cardView"
+                    android:layout_weight="1"
+                    android:layout_margin="5dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:src="@drawable/calender" />
+
+                        <TextView
+                            android:layout_marginTop="10dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/DarkBackground"
+                            android:textSize="18sp"
+                            android:text="November" />
+                    </LinearLayout>
+
+
+                </RelativeLayout>
+
+
+
+                <RelativeLayout
+                    android:id="@+id/dec"
+                    android:background="@drawable/calender_bg"
+                    android:layout_width="150dp"
+                    android:layout_height="120dp"
+                    android:layout_alignLeft="@+id/cardView"
+                    android:layout_alignStart="@+id/cardView"
+                    android:layout_below="@+id/cardView"
+                    android:layout_weight="1"
+                    android:layout_margin="5dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:src="@drawable/calender" />
+
+                        <TextView
+                            android:layout_marginTop="10dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/DarkBackground"
+                            android:textSize="18sp"
+                            android:text="December" />
+                    </LinearLayout>
+
+
+                </RelativeLayout>
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+
+    </FrameLayout>
+
+
+    </ScrollView>
+</RelativeLayout>
